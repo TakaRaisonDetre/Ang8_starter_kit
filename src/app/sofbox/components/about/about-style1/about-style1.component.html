@@ -1,0 +1,14 @@
+<section [id]="ids" [class]="className">
+  <app-animation-shape [animationShapeRight]="reverse" *ngIf="animation"></app-animation-shape>
+  <div class="container-fluid">
+    <div [class]="reverse ? 'row flex-row-reverse' : 'row'">
+      <div class="col-lg-6 col-md-6 ">
+        <ng-content select="[sectionImage]"></ng-content>
+      </div>
+      <div class="col-lg-4 col-md-5 align-self-center">
+        <ng-content select="[sectionTitle]"></ng-content>
+        <ng-content select="[sectionBody]"></ng-content>
+      </div>
+    </div>
+  </div>
+</section>

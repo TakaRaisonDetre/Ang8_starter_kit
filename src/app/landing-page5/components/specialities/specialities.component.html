@@ -1,0 +1,23 @@
+<section class="overview-block-ptb grey-bg iq-specialities">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="heading-title">
+          <h3 class="title iq-tw-7">Sofbox Specialities </h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-3 col-md-6 iq-mb-30" *ngFor="let item of list">
+        <app-card-style6>
+          <i aria-hidden="true" [ngClass]="item.icon" cardMedia></i>
+          <div cardBody>
+            <h5 class="iq-tw-7 iq-pt-20 iq-pb-10">{{ item.title }}</h5>
+            <p>{{ item.description }}</p>
+          </div>
+        </app-card-style6>
+      </div>
+    </div>
+  </div>
+</section>

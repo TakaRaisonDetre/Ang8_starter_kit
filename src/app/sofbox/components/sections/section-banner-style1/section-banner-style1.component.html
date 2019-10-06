@@ -1,0 +1,14 @@
+<section class="overview-block-ptb iq-breadcrumb iq-banner-13 text-left iq-over-blue-30 " id="iq-home">
+  <div class="banner-text">
+    <div class="container">
+      <div class="align-items-center" [ngClass]="reverse ? 'row flex-row-reverse' : 'row'">
+        <div class="col-lg-7 ">
+          <ng-content select="[media]"></ng-content>
+        </div>
+        <div class="col-lg-5 text-left">
+          <ng-content select="[content]"></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

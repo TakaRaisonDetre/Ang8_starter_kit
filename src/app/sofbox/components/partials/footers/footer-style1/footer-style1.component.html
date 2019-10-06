@@ -1,0 +1,18 @@
+<!--Footer-->
+<div id="contact" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-12 text-left iq-font-dark">
+        <div class="iq-ptb-20" [innerHTML]="footerText">© 2018 Sofbox Developed by <b>iqonicthemes</b>.</div>
+      </div>
+      <div class="col-md-5 col-lg-4 col-sm-12 align-self-center">
+        <ul class="info-share text-center text-sm-right">
+          <li *ngFor="let option of socialNavItemList">
+            <a href="{{ option.href }}" [innerHTML]="option.icon"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer end-->

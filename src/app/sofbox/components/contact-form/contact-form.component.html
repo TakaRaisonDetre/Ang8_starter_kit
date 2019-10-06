@@ -1,0 +1,27 @@
+<form method="post" (ngSubmit)="onSubmit($event)">
+  <div class="contact-form">
+    <div class="section-field">
+      <input class="require" id="contact_name" [(ngModel)]="mailData.name" type="text" placeholder="Name*" name="name" required>
+    </div>
+    <div class="section-field">
+      <input class="require" id="contact_email"  [(ngModel)]="mailData.email" type="email" placeholder="Email*" name="email" required>
+    </div>
+    <div class="section-field">
+      <input class="require" id="contact_phone" [(ngModel)]="mailData.phone" type="text" placeholder="Phone*" name="phone" required>
+    </div>
+    <div class="section-field textarea">
+      <label for="contact_message"></label><textarea id="contact_message"  [(ngModel)]="mailData.message" class="input-message require" placeholder="Comment*" rows="5" name="message" required></textarea>
+      </div>
+      <div class="section-field iq-mt-20">
+      <!--<div class="g-recaptcha" data-sitekey="6LdA3mYUAAAAANpUuZTLbKM_s23tTHlcdJ7dYfgI"></div>-->
+      <!--<re-captcha (resolved)="resolved($event)" class="google-recaptcha" size="invisible" siteKey="6LdoGLQUAAAAAHXWWr3HKFpCmEm768SZ8acyeRKq"></re-captcha>-->
+    </div>
+    <button id="submit" name="submit" type="submit" value="Send" [class]="buttonDis ? 'button iq-mt-15 disabled' : 'button iq-mt-15 '">Send Message</button>
+    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success">
+      <strong>Thank You, Your message has been received.</strong>.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</form>

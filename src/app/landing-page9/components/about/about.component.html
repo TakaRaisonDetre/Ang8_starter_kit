@@ -1,0 +1,22 @@
+<section id="about-us" class=" overview-block-ptb it-works re4-mt-50">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <app-section-title
+          title="What is sofbox ?"
+          subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        ></app-section-title>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-3" *ngFor="let card of cardData">
+        <div class="iq-works-box round-icon text-center">
+          <div class="icon-bg center-block"><i aria-hidden="true" [class]="card.icon"></i></div>
+          <h5 class="iq-tw-7 iq-mt-25 iq-mb-15">{{ card.title }}</h5>
+          <p>{{ card.description }}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

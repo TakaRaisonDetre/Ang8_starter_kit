@@ -1,0 +1,20 @@
+<section [id]="id" class="overview-block-ptb how-works ">
+  <div class="container">
+    <div class="row ">
+      <ng-content select="[cardMedia]"></ng-content>
+      <ng-content select="[cardBody]"></ng-content>
+      <div [ngClass]="small ? 'iq-objects-software' : 'iq-objects-softwarenew'">
+        <span class="iq-objects-01" data-bottom="transform:translatey(50px)" data-top="transform:translatey(-100px);">
+          <img src="./assets/images/drive/03.png" alt="drive02">
+        </span>
+        <span class="iq-objects-02" data-bottom="transform:translatex(50px)" data-top="transform:translatex(-100px);">
+          <img src="./assets/images/drive/04.png" alt="drive02">
+        </span>
+        <span class="iq-objects-03 iq-fadebounce">
+          <span class="iq-round"></span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>

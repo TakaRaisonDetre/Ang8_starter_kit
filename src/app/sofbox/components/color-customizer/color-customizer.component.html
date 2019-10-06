@@ -1,0 +1,16 @@
+<!--Color customizer-->
+<div class="iq-customizer" [ngClass]="panel">
+  <div class="buy-button"> <a class="opener" (click)="toggle()" href="javascript:void(0)"><i class="fa fa-spinner fa-spin"></i></a> </div>
+  <div class="clearfix content-chooser">
+    <h3 class="iq-font-black">Sofbox Awesome Color</h3>
+    <p>This color combo available inside whole template. You can change on your wish, Even you can create your own with limitless possibilities! </p>
+    <ul class="iq-colorChange clearfix">
+      <li *ngFor="let color of colors"
+          [ngClass]="(color.selected) ? 'selected' : ''"
+          (click)="styleChange(color)"
+          [style.backgroundColor]="color.code">
+      </li>
+    </ul>
+  </div>
+</div>
+<!--Color customizer end-->

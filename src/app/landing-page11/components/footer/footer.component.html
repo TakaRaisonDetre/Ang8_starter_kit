@@ -1,0 +1,37 @@
+<app-footer-main footerClass="iq-footer3 iq-ptb-20">
+    <div footerContent>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20">
+                <app-footer-logo
+                sectionImage="{{ navLogo }}"
+                sectionColor="white"
+                sectionText="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+                ></app-footer-logo>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20">
+                <app-footer-address [addressContent]="footerText"></app-footer-address>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20">
+                    <app-footer-address addressTitle="Office Days" addressClass="addresss-info" [addressContent]="footerTiming"></app-footer-address>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20">
+                <app-footer-links title="Menu" [content]="footerHome"></app-footer-links>
+            </div>
+        </div>
+      <hr>
+      <div class="row iq-mt-20">
+        <div class="col-lg-6 col-md-5 col-sm-12">
+          <ul class="link">
+            <li class="d-inline-block iq-mr-20"><a href="javascript:void(0)">Term and Condition</a></li>
+            <li class="d-inline-block"><a href="javascript:void(0)"> Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-7 col-sm-12">
+          <div class="iq-copyright">
+            © Copyright 2018 Sofbox Developed by <a href="https://iqonicthemes.com/">Iqonic Themes</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+</app-footer-main>
+

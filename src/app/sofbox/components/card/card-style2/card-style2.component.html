@@ -1,0 +1,10 @@
+<div class="iq-blog text-left iq-ptb-30 iq-pr-30 iq-pl-30" [ngClass]="active ? 'active' : ''">
+  <div>
+    <ng-content select="[cardIcon]"></ng-content>
+    <ng-content select="[cardTitle]"></ng-content>
+  </div>
+  <div class="content-blog">
+    <ng-content select="[cardBody]"></ng-content>
+    <ng-content select="[cardFooter]"></ng-content>
+  </div>
+</div>

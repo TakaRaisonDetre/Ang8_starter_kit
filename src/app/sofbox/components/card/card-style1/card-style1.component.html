@@ -1,0 +1,16 @@
+<div class="iq-blog-box">
+  <div class="iq-blog-image clearfix">
+    <div class="media-wrapper">
+      <ng-content select="[cardMedia]"></ng-content>
+    </div>
+  </div>
+  <div class="iq-blog-detail">
+    <div class="blog-title"><ng-content select="[cardTitle]"></ng-content></div>
+    <div class="blog-content">
+      <ng-content select="[cardBody]"></ng-content>
+    </div>
+    <div class="iq-blog-meta">
+      <ng-content select="[cardFooter]"></ng-content>
+    </div>
+  </div>
+</div>

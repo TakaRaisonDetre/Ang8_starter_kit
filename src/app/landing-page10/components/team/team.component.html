@@ -1,0 +1,19 @@
+<div class="row iq-team-1">
+  <div class="col-lg-4 col-sm-6 iq-mtb-20" *ngFor="let teamContent of teamContents">
+    <div class="team-blog iq-pall-20 text-center">
+        <img alt="" class="img-fluid text-center" src="{{ teamContent.image }}">
+        <div class="testimonial-name iq-font-dark iq-mt-20">
+            <h5 class="iq-font-black iq-tw-6">
+              <a href="{{ teamContent.link }}">
+                {{ teamContent.name }}
+              </a>
+            </h5>
+            <span>{{ teamContent.designation }}</span>
+            <div class="iq-star iq-font-green iq-mb-10">
+              <i class="fa fa-star" aria-hidden="true" *ngFor="let item of ratings(teamContent.rating);"></i>
+            </div>
+        </div>
+        <p>{{ teamContent.biography }}</p>
+    </div>
+  </div>
+</div>

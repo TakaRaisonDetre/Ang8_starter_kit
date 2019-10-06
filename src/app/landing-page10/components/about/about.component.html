@@ -1,0 +1,23 @@
+<section id="iq-services" class="iq-counter-box-1 overview-block-ptb it-works re4-mt-50 iq-font-black text-center">
+  <div class="container">
+      <div class="row ">
+          <div class="col-sm-12">
+              <app-section-title
+                title="What is sofbox ?"
+                subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry.">
+              </app-section-title>
+          </div>
+      </div>
+      <div class="row iq-mb-40">
+					<div class="col-sm-12 col-lg-4" *ngFor="let feature of featureList">
+            <div class="iq-works-box no-shadow text-center">
+                <img class="img-fluid" src="{{feature.icon}}" alt="#">
+                <h5 class="iq-tw-7 iq-mt-25 iq-mb-15">{{ feature.title }}</h5>
+                <p>{{ feature.description }}</p>
+                <a href="javascript:void(0)"><u>{{ feature.buttonLabel }}</u></a>
+            </div>
+					</div>
+      </div>
+      <a href="javascript:void(0)" class="button-blue-shadow iq-mt-10">Read More</a>
+  </div>
+</section>

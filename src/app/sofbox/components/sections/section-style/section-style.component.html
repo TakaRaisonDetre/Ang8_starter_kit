@@ -1,0 +1,14 @@
+<div [ngClass]="sectionClass" [id]="sectionId">
+	<div [ngClass]="fullWidth ? 'container-fluid' : 'container'">
+		<div class="row ">
+			<div class="col-sm-12">
+				<div class="heading-title">
+					<ng-content select="[sectionTitle]"></ng-content>
+					<ng-content select="[sectionDescription]"></ng-content>
+				</div>
+			</div>
+		</div>
+		<ng-content select="[sectionContent]"></ng-content>
+		<ng-content select="[sectionFooter]"></ng-content>
+	</div>
+</div>

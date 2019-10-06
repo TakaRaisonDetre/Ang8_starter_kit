@@ -1,0 +1,73 @@
+<!-- Feature start -->
+<section class="iq-feature1 overview-block-ptb grey-bg" id="software-features">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12">
+            <div class="heading-title text-center">
+               <h3 class="title iq-tw-6">Our Great Features</h3>
+               <p>Lorem Ipsum is simply dummy text ever sincehar the 1500s.</p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-4 col-md-6 col-sm-12 iq-mb-30" *ngFor="let feature of featureList">
+            <app-card-style2>
+               <i class="iq-mb-10" cardIcon [ngClass]="feature.icon"></i>
+               <h5 class="iq-tw-6" cardTitle>{{ feature.title }}</h5>
+               <p cardBody>{{ feature.description }}</p>
+            </app-card-style2>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="overview-block-ptb">
+   <div class="container">
+      <div class="row align-items-center text-center text-lg-left">
+         <div class="col-12 col-md-12 col-lg-6 mr-lg-auto text-center text-md-left">
+            <h3 class="iq-tw-7 iq-mb-15">We have achieved a trust over 1000+ peoples</h3>
+            <p class="">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+         </div>
+         <div class="col-12 col-md-12 col-lg-5">
+            <div class="row no-gutters">
+               <div class="col-md-6 col-sm-12 mb-3 pr-3 ">
+                  <div class=" iq-shadow d-flex align-items-center flex-wrap">
+                     <i class="ion-ios-person-outline " aria-hidden="true"></i>
+                     <div class="text-left">
+                        <span class="timer iq-tw-7 iq-font-30" [CountTo]="8000" [from]="0" [duration]="5">800</span>
+                        <p class="m-0 text-uppercase">Users</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
+                  <div class=" iq-shadow d-flex align-items-center flex-wrap">
+                     <i class="ion-ios-folder-outline " aria-hidden="true"></i>
+                     <div class="text-left">
+                        <span class="timer iq-tw-7 iq-font-30" [CountTo]="4000" [from]="0" [duration]="5">1540</span>
+                        <p class="m-0 text-uppercase">Downloads</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12 pr-3 mb-3">
+                  <div class=" iq-shadow d-flex align-items-center flex-wrap">
+                     <i class="ion-ios-star " aria-hidden="true"></i>
+                     <div class="text-left">
+                        <span class="timer iq-tw-7 iq-font-30" [CountTo]="3060" [from]="0" [duration]="5">1540</span>
+                        <p class="m-0 text-uppercase">App Rate </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class=" iq-shadow d-flex align-items-center flex-wrap blue-bg ">
+                     <i class="ion-ios-paper-outline iq-font-white" aria-hidden="true"></i>
+                     <div class="text-left">
+                        <span class="timer iq-tw-7 iq-font-30 iq-font-white" [CountTo]="450" [from]="0" [duration]="5">1540</span>
+                        <p class="m-0 text-uppercase iq-font-white">Projects</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Feature end -->

@@ -1,0 +1,10 @@
+<h5 class="iq-tw-7 iq-font-{{color}}  iq-mb-10">{{ title }}</h5>
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6" *ngFor="let section of content">
+    <ul class="menu">
+      <li *ngFor="let list of section.section">
+        <a href="{{ list.href }}">{{ list.title }}</a>
+      </li>
+    </ul>
+  </div>
+</div>

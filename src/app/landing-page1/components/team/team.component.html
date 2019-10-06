@@ -1,0 +1,34 @@
+<!-- our team -->
+<section class="overview-block-ptb blue-bg iq-team-main" id="team">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 iq-font-white">
+            <div class="heading-title white text-center">
+               <h2 class="title white iq-tw-6 iq-font-white iq-mb-50">Meet Our Creative Team</h2>
+               <p>Lorem Ipsum is simply dummy text ever sincehar the 1500s.</p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-3 col-sm-6 iq-mb-30" *ngFor="let list of temeList">
+            <app-card-style3>
+               <div cardMedia>
+                  <img alt="" class="img-fluid" [src]="list.media">
+               </div>
+               <div cardTitle>
+                  <a href="team-details-1.html">
+                     <h6 class="iq-font-white iq-tw-6">{{ list.title }}</h6>
+                  </a>
+                  <span>{{ list.subtitle }}</span>
+               </div>
+               <ul class="list-inline" cardFooter>
+                  <li *ngFor="let social of list.socialLinks">
+                     <a [href]="social.link"> <i [ngClass]="social.icon"></i> </a>
+                  </li>
+               </ul>
+            </app-card-style3>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- our team  end-->

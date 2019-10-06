@@ -1,0 +1,21 @@
+<section class="overview-block-ptb">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <app-section-title
+               title="What is sofbox ?"
+               subTitle="Lorem Ipsum is simply dummy text of the jd printing and typesetting industry. "
+               ></app-section-title>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12 col-lg-3 col-md-6" *ngFor="let option of cardData">
+            <app-fancy-card
+            [icon]="option.icon"
+            [title]="option.title"
+            [text]="option.text"
+            ></app-fancy-card>
+         </div>
+      </div>
+   </div>
+</section>

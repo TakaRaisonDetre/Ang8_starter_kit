@@ -1,0 +1,18 @@
+<div [ngClass]="sectionClass" >
+    <div [ngClass]="fullWidth ? 'container-fluid' : 'container'">
+        <div [ngClass]="reverse ? 'row flex-row-reverse' : 'row'">
+            <div [ngClass]="'col-lg-'+colLeft">
+                <h2 class="iq-tw-6 iq-font-white iq-mb-20 section-title">
+                  <ng-content select="sectionTitle"></ng-content>
+                </h2>
+                <p>
+                  <ng-content select="sectionDescription"></ng-content>
+                </p>
+                <ng-content select="sectionFooter"></ng-content>
+            </div>
+            <div [ngClass]="'col-lg-'+colRight">
+                <ng-content select="sectionImage"></ng-content>
+            </div>
+        </div>
+    </div>
+</div>

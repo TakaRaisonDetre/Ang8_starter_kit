@@ -1,0 +1,16 @@
+<div [ngClass]="carousalClass"
+     data-autoplay="true"
+     data-loop="true"
+     data-nav="true"
+     data-dots="false"
+     data-items="5"
+     data-items-laptop="5"
+     data-items-tab="4"
+     data-items-mobile="3"
+     data-items-mobile-sm="1"
+     data-margin="30"
+>
+  <div class="item" *ngFor="let option of images">
+    <img class="img-fluid center-block" src="{{ option.src }}" alt="#">
+  </div>
+</div>

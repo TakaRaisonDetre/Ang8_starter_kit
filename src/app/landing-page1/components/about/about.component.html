@@ -1,0 +1,61 @@
+<!-- How it Works -->
+<section class="overview-block-ptb">
+   <div class="container" id="how-it-works">
+      <div class="row">
+         <div class="col-sm-12">
+            <app-section-title
+               title="What is sofbox ?"
+               subTitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. ">
+            </app-section-title>
+         </div>
+         <div class="col-lg-12 col-md-12">
+            <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false" data-items="3" data-items-laptop="3" data-items-tab="2" data-items-mobile="1" data-items-mobile-sm="1" data-margin="15">
+               <div class="item " *ngFor="let list of items">
+                  <app-card-style4>
+                     <i cardMedia [ngClass]="list.icon"></i>
+                     <div cardBody>
+                        <h5 class="iq-tw-7 iq-mb-10">{{ list.title }}</h5>
+                        <p>{{ list.description }}</p>
+                     </div>
+                  </app-card-style4>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<app-section-style1>
+   <div class="col-lg-7" cardMedia>
+      <img class="iq-works-img pull-right img-fluid" src="./assets/images/drive/iPad-Mockup.png" alt="drive01">
+   </div>
+   <div class="col-lg-5 align-self-center" cardBody>
+      <span class="badge iq-badge blue-bg iq-font-white">Primary new</span>
+      <h3 class="iq-tw-7 iq-mb-15">What can sofbox do ?</h3>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+   </div>
+</app-section-style1>
+<app-section-style2>
+   <div class="col-lg-7" cardMedia>
+      <img class="iq-works-img pull-right img-fluid" src="./assets/images/drive/iPad-Mockup.png" alt="drive01">
+   </div>
+   <div class="col-lg-5 align-self-center" cardBody>
+      <span class="badge iq-badge blue-bg iq-font-white">Primary new</span>
+      <h3 class="iq-tw-7 iq-mb-15">Why Choose Sofbox ?</h3>
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+   </div>
+</app-section-style2>
+<section  class="overview-block-ptb how-works">
+   <div class="container">
+      <div class="row flex-row-reverse">
+         <div class="col-lg-7 ">
+            <img class="iq-works-img img-fluid" src="./assets/images/drive/iPad-Mockup2.png" alt="drive01">
+         </div>
+         <div class="col-lg-5 align-self-center ">
+            <span class="badge iq-badge blue-bg iq-font-white">Primary new</span>
+            <h3 class="iq-tw-7 iq-mb-15">Beautiful interfaces</h3>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- How it Works -->

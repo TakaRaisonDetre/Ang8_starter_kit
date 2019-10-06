@@ -1,0 +1,13 @@
+<div class="row justify-content-md-center">
+    <div class="col-lg-4 text-center" *ngFor="let counterContent of counterContents">
+        <div class="iq-counter-1">
+            <div class="counter-date">
+                <span class="timer iq-tw-7 iq-font-dark" [CountTo]="counterContent.number" [from]="0" [duration]="5">
+                    {{ counterContent.number }}
+                </span>
+                <label class="iq-font-blue">{{ counterContent.title }}</label>
+                <p>{{ counterContent.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

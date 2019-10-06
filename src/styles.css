@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/css/color/variable.css";
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,800,900');
+
+/* Bootstrap import */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Font-awesome import */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Ionic icons import */
+@import "assets/css/ionicons.min.css";
+
+/* Animate css import */
+@import "~animate.css/animate.min.css";
+
+/*********************************************************
+  Uncomment this Code to enable latest version of Ionic icons
+  !!!! Warning : Old version of ionic font might not work !!!!
+
+  @import "~ionicons/dist/css/ionicons.min.css";
+*********************************************************/
+
+/* Custom css file import */
+@import "assets/css/custom.css";
+
+/* Customize Style css*/
+@import "assets/css/style-customizer.css";
+
+/*Owl Carousel*/
+@import "~owl.carousel/dist/assets/owl.carousel.css";
+@import "~owl.carousel/dist/assets/owl.theme.default.css";
+
+@import "assets/css/magnific-popup.css";
+
+
+.fa, .fas {
+  font-weight: 900 !important;
+}
+
+button.disabled {
+  cursor: not-allowed;
+
+}
+
+header#main-header .navbar .menu li .sub-menu li {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  color: #23292c;
+  font-size: 14px;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+header#main-header .navbar .menu li {
+  margin: 0 30px 0 0;
+  position: relative;
+}
+
+button:focus { outline: none !important;}
+
+.header-style2 {
+  padding: 0px 15px !important;
+}
+
+.header-style2 > .nav-item.menu-item {
+  padding: 10px 0px !important;
+}
+
+.border-radius-4 {
+  border-radius: 4px !important;
+}
+

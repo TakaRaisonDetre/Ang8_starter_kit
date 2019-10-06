@@ -1,0 +1,50 @@
+<section class="footer-info iq-pt-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <div class="iq-footer-box text-left">
+          <div class="iq-icon">
+            <i aria-hidden="true" class="ion-ios-location-outline"></i>
+          </div>
+          <div class="footer-content">
+            <h4 class="iq-tw-7 iq-pb-10">Address</h4>
+            <ng-content select="[address]"></ng-content>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 r4-mt-30">
+        <div class="iq-footer-box text-left">
+          <div class="iq-icon">
+            <i aria-hidden="true" class="ion-ios-telephone-outline"></i>
+          </div>
+          <div class="footer-content">
+            <h4 class="iq-tw-7 iq-pb-10">Phone</h4>
+            <ng-content select="[phone]"></ng-content>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 r-mt-30">
+        <div class="iq-footer-box text-left">
+          <div class="iq-icon">
+            <i aria-hidden="true" class="ion-ios-email-outline"></i>
+          </div>
+          <div class="footer-content">
+            <h4 class="iq-tw-7 iq-pb-10">Mail</h4>
+            <ng-content select="[mail]"></ng-content>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 r-mt-30">
+        <ul class="info-share">
+          <ng-content select="[links]"></ng-content>
+        </ul>
+      </div>
+      <ng-content></ng-content>
+    </div>
+    <div class="row iq-mt-40">
+      <div class="col-sm-12 text-center">
+        <div class="footer-copyright iq-ptb-20">© <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="javascript:void(0)" class="text-green">Sofbox.</a> All Rights Reserved </div>
+      </div>
+    </div>
+  </div>
+</section>
